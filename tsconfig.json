@@ -1,15 +1,17 @@
 {
   "compilerOptions": {
     "lib": ["es2017"],
-    "module": "commonjs",
+    "module": "es2015",
+    "moduleResolution": "node",
     "noImplicitReturns": true,    
     "esModuleInterop": true,
     "outDir": "dist",
     "sourceMap": true,
+    "strict": true,
     "target": "es5",
     "declaration": true,
     "types": [
-      "mocha", "node", "chai"
+      "mocha", "node", "chai", "jest"
     ]
   },
   "compileOnSave": true,
