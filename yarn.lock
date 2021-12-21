@@ -69,6 +69,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@auto-it/git-tag@npm:^10.32.5":
+  version: 10.32.5
+  resolution: "@auto-it/git-tag@npm:10.32.5"
+  dependencies:
+    "@auto-it/core": 10.32.5
+    semver: ^7.0.0
+    tslib: 2.1.0
+  checksum: 6a4d74cdcd2839c3cdbd5d3afcc2d1b16d31860c02a05799f00d9bf9ec9a4cd0e93bf9e719ef4c18344bda60671ffe009c5aa3bbd4ba3578d643a4777dcf7392
+  languageName: node
+  linkType: hard
+
 "@auto-it/npm@npm:10.32.5, @auto-it/npm@npm:^10.32.5":
   version: 10.32.5
   resolution: "@auto-it/npm@npm:10.32.5"
@@ -1772,6 +1783,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "test-package@workspace:."
   dependencies:
+    "@auto-it/git-tag": ^10.32.5
     "@auto-it/npm": ^10.32.5
     "@auto-it/released": ^10.32.5
     "@auto-it/slack": ^10.32.5
