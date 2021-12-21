@@ -2,6 +2,6 @@ import { helloWorld } from '../src';
 
 describe('helloWorld', () => {
     it('Should return greetings', () => {
-        expect(helloWorld()).toEqual('Bonjour!')
+        expect(helloWorld()).toEqual('Hola!!')
     })
 });
