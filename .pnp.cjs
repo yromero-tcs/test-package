@@ -35,9 +35,21 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         [null, {
           "packageLocation": "./",
           "packageDependencies": [
+            ["@auto-it/npm", "npm:10.32.5"],
+            ["@auto-it/released", "npm:10.32.5"],
+            ["@auto-it/slack", "npm:10.32.5"],
             ["auto", "npm:10.32.5"]
           ],
           "linkType": "SOFT",
+        }]
+      ]],
+      ["@atomist/slack-messages", [
+        ["npm:1.2.2", {
+          "packageLocation": "./.yarn/cache/@atomist-slack-messages-npm-1.2.2-911327ab64-e1d6976d45.zip/node_modules/@atomist/slack-messages/",
+          "packageDependencies": [
+            ["@atomist/slack-messages", "npm:1.2.2"]
+          ],
+          "linkType": "HARD",
         }]
       ]],
       ["@auto-it/bot-list", [
@@ -154,6 +166,23 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["deepmerge", "npm:4.2.2"],
             ["fp-ts", "npm:2.11.5"],
             ["io-ts", "virtual:2b4649ffd1990b8a3f6632db2c409d775a2ccdc8c8f3e7d8a4b77f9993fd9cd134539a0abf7ea12b0e4c80ea7dff9baa7ec91ae1d909c19caba33d5939186f15#npm:2.2.16"],
+            ["tslib", "npm:2.1.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@auto-it/slack", [
+        ["npm:10.32.5", {
+          "packageLocation": "./.yarn/cache/@auto-it-slack-npm-10.32.5-79479535e0-d2f307d4ec.zip/node_modules/@auto-it/slack/",
+          "packageDependencies": [
+            ["@auto-it/slack", "npm:10.32.5"],
+            ["@atomist/slack-messages", "npm:1.2.2"],
+            ["@auto-it/core", "virtual:2b4649ffd1990b8a3f6632db2c409d775a2ccdc8c8f3e7d8a4b77f9993fd9cd134539a0abf7ea12b0e4c80ea7dff9baa7ec91ae1d909c19caba33d5939186f15#npm:10.32.5"],
+            ["@octokit/rest", "npm:18.12.0"],
+            ["fp-ts", "npm:2.11.5"],
+            ["https-proxy-agent", "npm:5.0.0"],
+            ["io-ts", "virtual:2b4649ffd1990b8a3f6632db2c409d775a2ccdc8c8f3e7d8a4b77f9993fd9cd134539a0abf7ea12b0e4c80ea7dff9baa7ec91ae1d909c19caba33d5939186f15#npm:2.2.16"],
+            ["node-fetch", "npm:2.6.1"],
             ["tslib", "npm:2.1.0"]
           ],
           "linkType": "HARD",
@@ -2118,6 +2147,9 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",
           "packageDependencies": [
             ["test-package", "workspace:."],
+            ["@auto-it/npm", "npm:10.32.5"],
+            ["@auto-it/released", "npm:10.32.5"],
+            ["@auto-it/slack", "npm:10.32.5"],
             ["auto", "npm:10.32.5"]
           ],
           "linkType": "SOFT",

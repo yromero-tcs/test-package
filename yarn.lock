@@ -5,6 +5,13 @@ __metadata:
   version: 5
   cacheKey: 8
 
+"@atomist/slack-messages@npm:^1.2.2":
+  version: 1.2.2
+  resolution: "@atomist/slack-messages@npm:1.2.2"
+  checksum: e1d6976d453f7265889070412afb24e5958e0b9221a01c893c89e13dd861a0f7d849c62f393f4c95a21e4d6219613bff3c55dd68ebe75903ef90185e2e0e509b
+  languageName: node
+  linkType: hard
+
 "@auto-it/bot-list@npm:10.32.5":
   version: 10.32.5
   resolution: "@auto-it/bot-list@npm:10.32.5"
@@ -62,7 +69,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@auto-it/npm@npm:10.32.5":
+"@auto-it/npm@npm:10.32.5, @auto-it/npm@npm:^10.32.5":
   version: 10.32.5
   resolution: "@auto-it/npm@npm:10.32.5"
   dependencies:
@@ -94,7 +101,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@auto-it/released@npm:10.32.5":
+"@auto-it/released@npm:10.32.5, @auto-it/released@npm:^10.32.5":
   version: 10.32.5
   resolution: "@auto-it/released@npm:10.32.5"
   dependencies:
@@ -105,6 +112,22 @@ __metadata:
     io-ts: ^2.1.2
     tslib: 2.1.0
   checksum: 67c432aacee32178bb3c4bbdf1a38d3a20e7b57a54cec1495f57022cc3ec2e10dccef9bc60ab2cdbdddf94daed63ae2a2b6cf1b475a3b2787b5e9222a0480f62
+  languageName: node
+  linkType: hard
+
+"@auto-it/slack@npm:^10.32.5":
+  version: 10.32.5
+  resolution: "@auto-it/slack@npm:10.32.5"
+  dependencies:
+    "@atomist/slack-messages": ^1.2.2
+    "@auto-it/core": 10.32.5
+    "@octokit/rest": ^18.0.0
+    fp-ts: ^2.5.3
+    https-proxy-agent: ^5.0.0
+    io-ts: ^2.1.2
+    node-fetch: 2.6.1
+    tslib: 2.1.0
+  checksum: d2f307d4ec72a5e6f7066130a0e28b4cc6c2be211853fa9d9659a3ce527904e97f2870c2edb7bbb0989a4bb69daab9646cae4b860dc1f4b06c6d3c9f5d51a1b3
   languageName: node
   linkType: hard
 
@@ -1749,6 +1772,9 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "test-package@workspace:."
   dependencies:
+    "@auto-it/npm": ^10.32.5
+    "@auto-it/released": ^10.32.5
+    "@auto-it/slack": ^10.32.5
     auto: ^10.32.5
   languageName: unknown
   linkType: soft
