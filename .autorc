@@ -1,0 +1,10 @@
+{
+  "plugins": [
+    "git-tag"
+  ],
+  "owner": "yromero-tcs",
+  "repo": "test-package",
+  "name": "Yael Romero",
+  "email": "yromero@truechoice.io",
+  "onlyPublishWithReleaseLabel": true
+}
